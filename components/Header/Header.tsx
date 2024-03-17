@@ -14,7 +14,7 @@ const Header = () => {
     <header className="bg-ctp-crust flex items-center justify-between px-3 py-2">
       <div className="flex items-center gap-5 justify-start flex-1">
         <Link href="/">
-          <FaLeaf className="text-4xl" />
+          <FaLeaf className="text-4xl text-ctp-green" />
         </Link>
         <div className="flex items-center bg-ctp-base px-2 rounded-full">
           <input
@@ -23,7 +23,7 @@ const Header = () => {
             placeholder="Search for anything"
           />
           <div className="p-2">
-            <RiSearch2Line />
+            <RiSearch2Line className="text-2xl" />
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ const Header = () => {
               {pathName === item.href ? item.activeIcon : item.icon}
             </span>
             <div
-              className={`absolute bg-ctp-pink h-1 -bottom-3 left-0 ${
+              className={`absolute bg-ctp-pink h-1 -bottom-3 left-0 rounded-t ${
                 pathName === item.href && "w-full"
               }`}
             ></div>
